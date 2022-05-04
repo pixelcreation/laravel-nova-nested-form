@@ -1,5 +1,5 @@
 <script>
-import MorphToField from '@/components/Form/MorphToField.vue'
+import MorphToField from '@/fields/Form/MorphToField.vue'
 import storage from '@/storage/MorphToFieldStorage'
 import { Errors } from 'laravel-nova'
 

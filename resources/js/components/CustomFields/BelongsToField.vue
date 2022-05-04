@@ -1,5 +1,5 @@
 <script>
-import BelongsToField from '@/components/Form/BelongsToField.vue'
+import BelongsToField from '@/fields/Form/BelongsToField.vue'
 import storage from '@/storage/BelongsToFieldStorage'
 
 export default {

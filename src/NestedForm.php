@@ -2,7 +2,6 @@
 
 namespace Yassi\NestedForm;
 
-use function GuzzleHttp\json_encode;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 use Laravel\Nova\Contracts\RelatableField;
@@ -589,7 +588,7 @@ class NestedForm extends Field implements RelatableField
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return array_merge(
             parent::jsonSerialize(),
@@ -608,5 +607,15 @@ class NestedForm extends Field implements RelatableField
                 'displayIf' => isset($this->displayIfCallback) ? call_user_func($this->displayIfCallback) : null
             ]
         );
+    }
+
+    public function relationshipName()
+    {
+        // TODO: Implement relationshipName() method.
+    }
+
+    public function relationshipType()
+    {
+        // TODO: Implement relationshipType() method.
     }
 }
